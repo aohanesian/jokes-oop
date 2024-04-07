@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes 💛💜</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="joke__wrapper">
+        <section class="joke__creation">
+            <form id="jokeForm" class="joke__form">
+                <label>
+                    <input type="radio" name="jokeFormType" value="random" checked>
+                    Random
+                </label>
+                <label>
+                    <input type="radio" name="jokeFormType" value="categories">
+                    Categories
+                    <ul id="jokeFormCats" class="joke__cats">
+                        <!-- <li>
+                            <label>
+                                <input type="radio" name="jokeCat" value="animal">
+                                animal
+                            </label>
+                        </li> -->
+                    </ul>
+                </label>
+                <label>
+                    <input type="radio" name="jokeFormType" value="search">
+                    Search
+                    <input type="text" id="jokeFormSearch">
+                </label>
+                <button>Get a joke</button>
+            </form>
+
+            <div id="jokesContainer" class="joke__container">
+                <!-- <div class="joke__block">
+                    <button class="joke__block--fav">💛</button>
+                    <p class="joke__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia.</p>
+                    <p class="joke__block--cat">animal</p>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="joke__favourites">
+            <h3>Favourites</h3>
+            <div id="jokesContainerFavourites">
+                <!-- <div class="joke__block">
+                    <button class="joke__block--fav">💜</button>
+                    <p class="joke__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quia.</p>
+                    <p class="joke__block--cat">animal</p>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
